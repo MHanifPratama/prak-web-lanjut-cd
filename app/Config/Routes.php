@@ -6,4 +6,8 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
-$routes->get('/profile/(:any)/(:any)', 'Home::profile/$1/$2');
+$routes->get('user/profile/(:any)/(:any)', 'UserController::profile/$1/$2');
+
+#form
+$routes->get('/user/create', 'UserController::create');
+$routes->post('/user/store', 'UserController::store');

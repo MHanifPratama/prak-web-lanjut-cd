@@ -8,12 +8,5 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
-    public function profile($nama ="", $npm =""): string
-    {
-        $data=[
-            'nama'=>$nama,
-            'npm'=>$npm
-        ];
-        return view('profile',$data);
-    }
+    
 }
