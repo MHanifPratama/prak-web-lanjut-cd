@@ -6,22 +6,22 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="<?=base_url('/user/store')?>" method="post">
     <table>
-        <tr aria-colspan="3">
-            <td>
-                <img src="<?=base_url('/assets/img/erd_API_Phase2.png')?>" size="200" height="200">
-            </td>
-        </tr>
         <tr>
             <td>Nama</td>
             <td>:</td>
-            <td><?=$nama?></td>
+            <td><input type="text" name="nama"></td>
         </tr>
         <tr>
             <td>NPM</td>
             <td>:</td>
-            <td><?=$npm?></td>
+            <td><input type="text" name="npm"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Simpan"></td>
         </tr>
     </table>
+    </form>
 </body>
 </html>
