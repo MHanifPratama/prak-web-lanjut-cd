@@ -19,6 +19,17 @@
             <td><input type="text" name="npm"></td>
         </tr>
         <tr>
+            <td>Kelas</td>
+            <td>:</td>
+            <td>
+                <select name="kelas" id="kelas">
+                    <?php foreach($kelas as $item):?>
+                        <option value="<?=$item['id']?>"><?=$item['nama_kelas']?></option>
+                    <?php endforeach;?>
+                </select>
+            </td>
+        </tr>
+        <tr>
             <td><input type="submit" value="Simpan"></td>
         </tr>
     </table>

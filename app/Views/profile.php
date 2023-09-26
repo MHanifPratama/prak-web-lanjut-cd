@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Validate -->
     <table>
         <tr aria-colspan="3">
             <td>
@@ -21,6 +22,11 @@
             <td>NPM</td>
             <td>:</td>
             <td><?=$npm?></td>
+        </tr>
+        <tr>
+            <td>Kelas</td>
+            <td>:</td>
+            <td><?=$id_kelas?></td>
         </tr>
     </table>
 </body>
